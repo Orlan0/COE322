@@ -20,12 +20,43 @@ using std::endl;
 
 
 
-//logic if the least significant bit is 1, if it is a zero, then it is even. Logic --> Create one loop to see
-// if it has the last bit of 1. 
+  
 
+int read_number() {  // Use the same function name as declared earlier
+    int x;
+    cout << "Please enter a number: " <<endl;
+    cin >> x;
+    return x;
+}
+
+/*
+int main() { //Main function, runs fizzbuzz
+        if (int number = read_number();int(number) % 3 == 0 && int(number) % 5 == 0) {15
+            cout << "Fizzbuzz!" << endl; //Printed if number is a multiple of 3 and 5
+        } else if (int(number) % 3 == 0) {
+            cout << "Fizz!" << endl; //Printed if number is a multiple of 3
+        } else if (int(number) % 5 == 0) {
+            cout << "Buzz!" << endl; //Printed if number is a multiple of 5
+        }
+
+    return 0;
+}
+*/
 int main() {
+    // Exercise 3
+    if (int number = read_number(); int(number) % 3 == 0 && int(number) % 5 == 0) {
+        cout << "Fizzbuzz!" << endl; 
+    }
+    else if (int(number) % 3 == 0 && int(number) % 5 != 0 ) { 
+        cout << "Fizz!" << endl; 
+    }
+    else if (int(number) % 5 == 0 && int(number) % 3 != 0) {
+        cout << "Buzz!" << endl; 
+    }
+    return 0; 
+}
 
-
+  /*
 int x; 
  cout << "give me a number please: .\n"; 
  cin >> x;
@@ -40,7 +71,7 @@ int x;
     }
     else { 
         cout<< "Its nothing sadge" <<endl;
-    }
+	} */
 /*
 Excersize #2
  int x; 
@@ -54,7 +85,3 @@ if(x & 1) {
     cout << "this number is even:" << x << "\n";
 }
 */
-
-
-return 0; 
-}
