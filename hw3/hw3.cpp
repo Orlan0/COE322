@@ -1,3 +1,9 @@
+ //Write a loop that prints x = 1/10,2/10,...,1. Do this
+ //• with an integer loop variable
+ //• with a float or double loop variable
+ // How do you do the stopping test?
+ // What do you observe?
+
 
 #include <iostream> 
 
@@ -6,52 +12,43 @@ using std::cin;
 using std::endl; 
 
 
-
-
-
-
 int main(){
 
 
 // REAL HOMEWORK 3 
 
- int x; 
- cout << "give me a number please: .\n"; 
- cin >> x;
- int iteration = 0; 
 
+int num_w_highest_iteration = 0; 
+int max_iteration = 0; 
+
+for (int x =1; x < 1000; x++) {
+
+   int og_x = x; 
+   int iteration = 1; 
 
 while (x !=1) {
-   int xnew; 
     if (x%2 == 0){
-      xnew = x/2; 
-      cout << xnew << endl; 
+      x = x/2; 
  }
    else {
-      xnew = 3*x +1; 
-      cout << xnew << endl; 
+      x = 3*x +1; 
    }
-   x = xnew; 
    iteration ++;
 }
 
 
-cout << "it took " << iteration << " iterations to finish" << endl; 
+if (iteration > max_iteration){
+   max_iteration = iteration; 
+   num_w_highest_iteration = og_x; 
+   cout << num_w_highest_iteration << " took " << max_iteration << " iterations " << endl; 
 
 }
-/*
-int main(){
-cout << "This is an int loop" <<endl; 
-for (int y = 1; y < 11; y++){ 
-   cout << (y/10.) << endl; 
-}
-cout << "This is an float loop" <<endl; 
-for (float y = .1; y < 1.1; y+=0.1){
-   cout << y << endl; 
-}
-cout << "This is an double loop" <<endl; 
-for (double z = 0.1; z < 1; z+= 0.1){
-   cout << z << endl; 
-}
-}*/
+   x = og_x; 
 
+
+}
+
+   cout << "At the very very end: " << num_w_highest_iteration << " took " << max_iteration << " iterations " << endl; 
+
+
+}
