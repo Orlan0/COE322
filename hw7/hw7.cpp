@@ -1,3 +1,8 @@
+// Name: Orlan Oconer
+// EID: ojo366
+// TACC username: orlan 
+
+
 #include <iostream>
 #include <cmath>  // For sqrt
 #include <sstream>

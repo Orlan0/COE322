@@ -1,3 +1,8 @@
+#Name: Orlan Oconer
+#EID: ojo366
+#TACC username: orlan
+
+
 # CMake version required
 cmake_minimum_required(VERSION 3.20)
 
