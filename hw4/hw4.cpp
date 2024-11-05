@@ -19,7 +19,7 @@ double newton_root
     {
     //setting initial double x value 
     double x = 1000; 
-    while(abs(f(x) > pow(10,-5))){
+    while(std::abs(f(x)) > pow(10,-5)){
         x -= f(x)/fprime(x); 
     }
     return x; 
